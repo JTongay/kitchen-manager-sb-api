@@ -4,8 +4,8 @@ import com.jtongay.kitchenmanager.models.User;
 
 import java.util.List;
 
-public interface IUserService {
-  List<User> findAll();
+public interface UserService {
+  Iterable<User> findAll();
 
   void save(User user);
 }

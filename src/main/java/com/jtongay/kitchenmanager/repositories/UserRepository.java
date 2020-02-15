@@ -8,12 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends CrudRepository {
-  List<User> findAll();
-
-  void save(User user);
-
-  Optional<User> findById(String id);
+public interface UserRepository extends CrudRepository<User, Long> {
 
   Optional<User> findByUsername(String username);
 }
